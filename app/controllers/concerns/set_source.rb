@@ -1,9 +1,9 @@
 module SetSource
   extend ActiveSupport::Concern
 
-included do
+  included do
     before_action :set_source
-end
+  end
 
   def set_source
     session[:source] = params[:q] if params[:q]
