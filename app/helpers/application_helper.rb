@@ -15,4 +15,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
+
+  def copyright_generator
+    DunnViewTool::Renderer.copyright 'Jared Dunn', 'All rights reserved'
+  end
 end
