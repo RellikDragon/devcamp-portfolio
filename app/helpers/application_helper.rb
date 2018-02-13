@@ -64,7 +64,7 @@ module ApplicationHelper
   end
 
   def alerts
-    alert = (flash[:alert] || flash[:error] || flash[:notice] )
+    alert = (flash[:alert] || flash[:error] || flash[:notice])
 
     if alert
       alert_generator alert
@@ -72,6 +72,7 @@ module ApplicationHelper
   end
 
   def alert_generator msg
-    js add_gritter(msg, title: "Jared Dunn's Portfolio", sticky: false)
+    js add_gritter(msg, title: "Jordan Hudgens Portfolio", sticky: false)
   end
+
 end
